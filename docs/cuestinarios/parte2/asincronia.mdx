@@ -1,0 +1,106 @@
+---
+sidebar_position: 4
+---
+import Quiz from '@site/src/components/Quiz';
+
+# Asincronía en JavaScript
+
+Aquí tienes un cuestionario sobre **asincronía en JavaScript**. Responde las preguntas y verifica tus respuestas.
+
+<Quiz questions={[
+  {
+    question: '¿Qué es un callback en JavaScript?',
+    options: [
+      'Una función que se pasa como argumento a otra función',
+      'Una variable que contiene una función',
+      'Una función que se llama a sí misma',
+      'Una función que se ejecuta de inmediato'
+    ],
+    answer: 'Una función que se pasa como argumento a otra función'
+  },
+  {
+    question: '¿Cuál es la sintaxis correcta para crear una promesa?',
+    options: [
+      'new Promise((resolve, reject) => { ... })',
+      'create Promise((resolve, reject) => { ... })',
+      'make Promise((resolve, reject) => { ... })',
+      'promise((resolve, reject) => { ... })'
+    ],
+    answer: 'new Promise((resolve, reject) => { ... })'
+  },
+  {
+    question: '¿Qué método se usa para manejar una promesa resuelta?',
+    options: ['.then()', '.catch()', '.finally()', '.resolve()'],
+    answer: '.then()'
+  },
+  {
+    question: '¿Qué método se usa para manejar una promesa rechazada?',
+    options: ['.then()', '.catch()', '.finally()', '.reject()'],
+    answer: '.catch()'
+  },
+  {
+    question: '¿Qué palabra clave se usa para esperar a que una promesa se resuelva en una función asíncrona?',
+    options: ['wait', 'await', 'pause', 'async'],
+    answer: 'await'
+  },
+  {
+    question: '¿Cuál es la salida de la siguiente estructura? `async function fetchData() { return "data"; } fetchData().then(console.log);`',
+    options: ['Promise {<resolved>: "data"}', 'data', 'undefined', 'Error'],
+    answer: 'data'
+  },
+  {
+    question: '¿Qué palabra clave se usa para declarar una función asíncrona?',
+    options: ['async', 'await', 'promise', 'defer'],
+    answer: 'async'
+  },
+  {
+    question: '¿Qué método se usa para ejecutar varias promesas en paralelo y esperar a que todas se resuelvan?',
+    options: ['Promise.all()', 'Promise.race()', 'Promise.any()', 'Promise.resolve()'],
+    answer: 'Promise.all()'
+  },
+  {
+    question: '¿Qué método se usa para ejecutar varias promesas en paralelo y obtener el primer resultado que se resuelva?',
+    options: ['Promise.all()', 'Promise.race()', 'Promise.any()', 'Promise.resolve()'],
+    answer: 'Promise.race()'
+  },
+  {
+    question: '¿Qué método se usa para obtener el resultado de la primera promesa que se resuelva con éxito, ignorando las rechazadas?',
+    options: ['Promise.all()', 'Promise.race()', 'Promise.any()', 'Promise.resolve()'],
+    answer: 'Promise.any()'
+  },
+  {
+    question: '¿Qué se imprime en la consola con el siguiente código? `console.log("start"); setTimeout(() => console.log("middle"), 0); console.log("end");`',
+    options: ['start, middle, end', 'start, end, middle', 'middle, start, end', 'end, start, middle'],
+    answer: 'start, end, middle'
+  },
+  {
+    question: '¿Qué método se usa para agregar una función al final de la cola de eventos?',
+    options: ['setTimeout()', 'setImmediate()', 'setInterval()', 'requestAnimationFrame()'],
+    answer: 'setTimeout()'
+  },
+  {
+    question: '¿Cuál es la diferencia principal entre `setTimeout` y `setInterval`?',
+    options: [
+      'setTimeout se ejecuta una vez, setInterval se ejecuta repetidamente',
+      'setTimeout se ejecuta repetidamente, setInterval se ejecuta una vez',
+      'No hay diferencia',
+      'setTimeout es más rápido que setInterval'
+    ],
+    answer: 'setTimeout se ejecuta una vez, setInterval se ejecuta repetidamente'
+  },
+  {
+    question: '¿Qué es una "promise chain"?',
+    options: [
+      'Una serie de promesas que se ejecutan secuencialmente, donde cada promesa usa el resultado de la anterior',
+      'Varias promesas que se ejecutan en paralelo',
+      'Una promesa que se ejecuta repetidamente',
+      'Una serie de promesas que se ejecutan independientemente'
+    ],
+    answer: 'Una serie de promesas que se ejecutan secuencialmente, donde cada promesa usa el resultado de la anterior'
+  },
+  {
+    question: '¿Qué método se usa para retrasar la ejecución de una función?',
+    options: ['setTimeout', 'delay', 'pause', 'async'],
+    answer: 'setTimeout'
+  }
+]} />

@@ -1,0 +1,101 @@
+---
+sidebar_position: 3
+---
+import Quiz from '@site/src/components/Quiz';
+
+# Manejo de Errores y Depuración
+
+Aquí tienes un cuestionario sobre **manejo de errores y depuración en JavaScript**. Responde las preguntas y verifica tus respuestas.
+
+<Quiz questions={[
+  {
+    question: '¿Qué palabra clave se usa para manejar excepciones en JavaScript?',
+    options: ['try', 'catch', 'finally', 'Todas las anteriores'],
+    answer: 'Todas las anteriores'
+  },
+  {
+    question: '¿Cómo se lanza una excepción en JavaScript?',
+    options: ['throw', 'raise', 'error', 'catch'],
+    answer: 'throw'
+  },
+  {
+    question: '¿Cuál es la salida de la siguiente estructura? `try { throw new Error("Oops!"); } catch (e) { console.log(e.message); }`',
+    options: ['Oops!', 'Error', 'new Error', 'undefined'],
+    answer: 'Oops!'
+  },
+  {
+    question: '¿Qué método se usa para registrar mensajes en la consola del navegador?',
+    options: ['console.log()', 'console.write()', 'console.print()', 'console.display()'],
+    answer: 'console.log()'
+  },
+  {
+    question: '¿Cómo se puede depurar una línea específica de código en el navegador?',
+    options: ['Usando `debugger;`', 'Usando `breakpoint;`', 'Usando `console.debug();`', 'Usando `halt;`'],
+    answer: 'Usando `debugger;`'
+  },
+  {
+    question: '¿Qué herramienta del navegador se usa comúnmente para depurar JavaScript?',
+    options: ['DevTools', 'Console', 'Inspector', 'Todos los anteriores'],
+    answer: 'Todos los anteriores'
+  },
+  {
+    question: '¿Cómo se agrupan mensajes en la consola?',
+    options: ['console.group()', 'console.bundle()', 'console.cluster()', 'console.set()'],
+    answer: 'console.group()'
+  },
+  {
+    question: '¿Qué método se usa para registrar el tiempo que tarda en ejecutarse un bloque de código?',
+    options: ['console.time()', 'console.timer()', 'console.track()', 'console.clock()'],
+    answer: 'console.time()'
+  },
+  {
+    question: '¿Cuál es la diferencia entre `console.log()` y `console.error()`?',
+    options: [
+      '`console.log()` se usa para mensajes informativos, `console.error()` para errores',
+      'No hay diferencia',
+      '`console.error()` no muestra mensajes en la consola',
+      '`console.log()` muestra los mensajes en rojo'
+    ],
+    answer: '`console.log()` se usa para mensajes informativos, `console.error()` para errores'
+  },
+  {
+    question: '¿Qué método se usa para detener la ejecución de un bucle en JavaScript?',
+    options: ['break', 'halt', 'stop', 'exit'],
+    answer: 'break'
+  },
+  {
+    question: '¿Qué hace el bloque `finally` en una estructura `try...catch...finally`?',
+    options: [
+      'Se ejecuta siempre, independientemente de si hubo un error o no',
+      'Se ejecuta solo si no hubo errores',
+      'Se ejecuta solo si hubo errores',
+      'No tiene ninguna función'
+    ],
+    answer: 'Se ejecuta siempre, independientemente de si hubo un error o no'
+  },
+  {
+    question: '¿Cómo se pueden capturar todos los errores no manejados en una aplicación JavaScript?',
+    options: [
+      'Usando `window.onerror`',
+      'Usando `window.catchError`',
+      'Usando `window.handleError`',
+      'Usando `document.onerror`'
+    ],
+    answer: 'Usando `window.onerror`'
+  },
+  {
+    question: '¿Cuál es la forma correcta de manejar un error asíncrono con promesas?',
+    options: ['Usando `.catch()`', 'Usando `.then()`', 'Usando `try...catch`', 'Usando `async...await`'],
+    answer: 'Usando `.catch()`'
+  },
+  {
+    question: '¿Qué método se usa para registrar advertencias en la consola?',
+    options: ['console.warn()', 'console.alert()', 'console.warning()', 'console.notice()'],
+    answer: 'console.warn()'
+  },
+  {
+    question: '¿Cuál es la salida de `console.error(new Error("Error!"));`?',
+    options: ['Muestra el error con un stack trace', 'Solo muestra "Error!"', 'No muestra nada', 'Muestra "new Error"'],
+    answer: 'Muestra el error con un stack trace'
+  }
+]} />

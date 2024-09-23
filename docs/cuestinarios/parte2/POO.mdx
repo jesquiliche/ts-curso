@@ -1,0 +1,111 @@
+---
+sidebar_position: 1
+---
+import Quiz from '@site/src/components/Quiz';
+
+# Programación Orientada a Objetos
+
+Aquí tienes un cuestionario sobre **programación orientada a objetos en JavaScript**. Responde las preguntas y verifica tus respuestas.
+
+<Quiz questions={[
+  {
+    question: '¿Cómo se define una clase en JavaScript?',
+    options: ['function Clase() {}', 'class Clase {}', 'let Clase = () => {}', 'const Clase = {}'],
+    answer: 'class Clase {}'
+  },
+  {
+    question: '¿Cómo se crea una instancia de una clase llamada "Persona"?',
+    options: ['new Persona()', 'Persona()', 'create Persona()', 'new Persona'],
+    answer: 'new Persona()'
+  },
+  {
+    question: '¿Cuál es la sintaxis correcta para definir un método dentro de una clase?',
+    options: [
+      'method() {}',
+      'function method() {}',
+      'let method = function() {}',
+      'const method = () => {}'
+    ],
+    answer: 'method() {}'
+  },
+  {
+    question: '¿Qué palabra clave se usa para heredar de otra clase?',
+    options: ['inherits', 'extends', 'implements', 'uses'],
+    answer: 'extends'
+  },
+  {
+    question: '¿Cómo se llama al constructor de una clase padre desde una clase hija?',
+    options: ['parent()', 'super()', 'this.parent()', 'this.super()'],
+    answer: 'super()'
+  },
+  {
+    question: '¿Cuál es la forma correcta de declarar una propiedad estática en una clase?',
+    options: ['static propiedad', 'propiedad static', 'this.propiedad static', 'static: propiedad'],
+    answer: 'static propiedad'
+  },
+  {
+    question: '¿Qué palabra clave se utiliza para definir una propiedad privada en una clase?',
+    options: ['private', '#', 'this.private', '_'],
+    answer: '#'
+  },
+  {
+    question: '¿Cuál es la sintaxis correcta para acceder a una propiedad de un objeto?',
+    options: ['objeto.propiedad', 'objeto[propiedad]', 'objeto->propiedad', 'objeto::propiedad'],
+    answer: 'objeto.propiedad'
+  },
+  {
+    question: '¿Qué es el polimorfismo en programación orientada a objetos?',
+    options: [
+      'La capacidad de una clase de heredar de múltiples clases',
+      'La capacidad de un método de tomar múltiples formas',
+      'La capacidad de un objeto de tener múltiples propiedades',
+      'La capacidad de una función de tener múltiples argumentos'
+    ],
+    answer: 'La capacidad de un método de tomar múltiples formas'
+  },
+  {
+    question: '¿Cómo se define un getter en una clase?',
+    options: [
+      'get propiedad() {}',
+      'getter propiedad() {}',
+      'get: function propiedad() {}',
+      'propiedad get() {}'
+    ],
+    answer: 'get propiedad() {}'
+  },
+  {
+    question: '¿Cómo se define un setter en una clase?',
+    options: [
+      'set propiedad(valor) {}',
+      'setter propiedad(valor) {}',
+      'set: function propiedad(valor) {}',
+      'propiedad set(valor) {}'
+    ],
+    answer: 'set propiedad(valor) {}'
+  },
+  {
+    question: '¿Qué método se usa para crear un nuevo objeto a partir de un prototipo existente?',
+    options: ['Object.create()', 'Object.new()', 'Object.prototype()', 'Object.construct()'],
+    answer: 'Object.create()'
+  },
+  {
+    question: '¿Qué palabra clave se usa para referirse a la instancia actual de una clase?',
+    options: ['self', 'that', 'this', 'instance'],
+    answer: 'this'
+  },
+  {
+    question: '¿Cómo se define un método de clase?',
+    options: ['static metodo() {}', 'class metodo() {}', 'method() {}', 'const metodo = () => {}'],
+    answer: 'static metodo() {}'
+  },
+  {
+    question: '¿Qué es la encapsulación en programación orientada a objetos?',
+    options: [
+      'El concepto de esconder los detalles de implementación y mostrar solo la funcionalidad',
+      'El concepto de heredar propiedades y métodos de otra clase',
+      'El concepto de definir métodos con el mismo nombre en diferentes clases',
+      'El concepto de permitir que una clase tenga múltiples instancias'
+    ],
+    answer: 'El concepto de esconder los detalles de implementación y mostrar solo la funcionalidad'
+  }
+]} />

@@ -1,0 +1,36 @@
+.quiz-container {
+  font-family: Arial, sans-serif;
+}
+
+.quiz-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.question {
+  margin: 10px 0;
+}
+
+.option {
+  display: block;
+  margin: 5px 0;
+}
+
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+  font-weight: bold;
+}

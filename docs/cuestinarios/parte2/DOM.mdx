@@ -1,0 +1,91 @@
+---
+sidebar_position: 2
+---
+import Quiz from '@site/src/components/Quiz';
+
+# Manipulación del DOM
+
+Aquí tienes un cuestionario sobre **manipulación del DOM en JavaScript**. Responde las preguntas y verifica tus respuestas.
+
+<Quiz questions={[
+  {
+    question: '¿Qué método se usa para seleccionar un elemento por su ID en el DOM?',
+    options: ['document.getElementById()', 'document.querySelector()', 'document.getElementByClassName()', 'document.getElementByTagName()'],
+    answer: 'document.getElementById()'
+  },
+  {
+    question: '¿Cómo seleccionas todos los elementos con una clase específica en el DOM?',
+    options: ['document.querySelectorAll()', 'document.getElementsByClassName()', 'document.querySelector()', 'document.getElementsByTagName()'],
+    answer: 'document.getElementsByClassName()'
+  },
+  {
+    question: '¿Cuál es la forma correcta de cambiar el contenido de un elemento?',
+    options: ['element.innerHTML = "Nuevo contenido"', 'element.content = "Nuevo contenido"', 'element.textContent = "Nuevo contenido"', 'Ambas A y C'],
+    answer: 'Ambas A y C'
+  },
+  {
+    question: '¿Qué método se usa para agregar un nuevo hijo a un elemento del DOM?',
+    options: ['element.appendChild()', 'element.addChild()', 'element.createChild()', 'element.insertChild()'],
+    answer: 'element.appendChild()'
+  },
+  {
+    question: '¿Cómo se elimina un elemento del DOM?',
+    options: ['element.remove()', 'element.delete()', 'element.removeChild()', 'element.deleteChild()'],
+    answer: 'element.remove()'
+  },
+  {
+    question: '¿Cómo se añade una clase a un elemento del DOM?',
+    options: ['element.classList.add()', 'element.addClass()', 'element.className.add()', 'element.class.add()'],
+    answer: 'element.classList.add()'
+  },
+  {
+    question: '¿Cuál es la forma correcta de manejar un evento de clic en un botón?',
+    options: [
+      'button.onclick = function() {}',
+      'button.addEventListener("click", function() {})',
+      'button.on("click", function() {})',
+      'Ambas A y B'
+    ],
+    answer: 'Ambas A y B'
+  },
+  {
+    question: '¿Cómo se puede prevenir el comportamiento predeterminado de un evento?',
+    options: ['event.preventDefault()', 'event.stopPropagation()', 'event.prevent()', 'event.stopDefault()'],
+    answer: 'event.preventDefault()'
+  },
+  {
+    question: '¿Qué método se usa para detener la propagación de un evento en el DOM?',
+    options: ['event.stopPropagation()', 'event.preventDefault()', 'event.stop()', 'event.prevent()'],
+    answer: 'event.stopPropagation()'
+  },
+  {
+    question: '¿Cómo se puede obtener el valor de un atributo de un elemento?',
+    options: ['element.getAttribute()', 'element.attribute()', 'element.attr()', 'element.get()'],
+    answer: 'element.getAttribute()'
+  },
+  {
+    question: '¿Qué método se usa para establecer un nuevo atributo en un elemento?',
+    options: ['element.setAttribute()', 'element.attribute()', 'element.attr()', 'element.set()'],
+    answer: 'element.setAttribute()'
+  },
+  {
+    question: '¿Cómo se clona un elemento del DOM?',
+    options: ['element.cloneNode()', 'element.copy()', 'element.duplicate()', 'element.replicate()'],
+    answer: 'element.cloneNode()'
+  },
+  {
+    question: '¿Qué propiedad se usa para cambiar el estilo de un elemento?',
+    options: ['element.style', 'element.css', 'element.styles', 'element.setStyle'],
+    answer: 'element.style'
+  },
+  {
+    question: '¿Cómo se accede al elemento padre de un nodo en el DOM?',
+    options: ['element.parentNode', 'element.parentElement', 'element.parent', 'Ambas A y B'],
+    answer: 'Ambas A y B'
+  },
+  {
+    question: '¿Cómo se verifica si un elemento tiene una clase específica?',
+    options: ['element.classList.contains()', 'element.hasClass()', 'element.class.contains()', 'element.containsClass()'],
+    answer: 'element.classList.contains()'
+  }
+]} />

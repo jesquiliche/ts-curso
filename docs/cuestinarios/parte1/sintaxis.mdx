@@ -1,0 +1,197 @@
+---
+sidebar_position: 1
+
+---
+import Quiz from '@site/src/components/Quiz';
+
+# Sintaxis Básica
+
+Aquí tienes un cuestionario sobre la **sintaxis básica** de JavaScript. Responde las preguntas y verifica tus respuestas.
+
+<Quiz questions={[
+  {
+    question: '¿Cómo se declara una variable en JavaScript?',
+    options: ['var', 'let', 'const', 'Todas las anteriores'],
+    answer: 'Todas las anteriores'
+  },
+  {
+    question: '¿Cuál es la sintaxis correcta para crear una función en JavaScript?',
+    options: [
+      'function miFuncion() {}',
+      'def miFuncion() {}',
+      'create miFuncion() {}',
+      'new Function() {}'
+    ],
+    answer: 'function miFuncion() {}'
+  },
+  {
+    question: '¿Cómo se llama una función llamada "miFuncion" en JavaScript?',
+    options: ['call miFuncion()', 'miFuncion()', 'execute miFuncion()', 'miFuncion{}'],
+    answer: 'miFuncion()'
+  },
+  {
+    question: '¿Cómo se escribe un comentario de una sola línea en JavaScript?',
+    options: ['<!-- Comentario -->', '# Comentario', '// Comentario', '/* Comentario */'],
+    answer: '// Comentario'
+  },
+  {
+    question: '¿Cómo se escribe un comentario de múltiples líneas en JavaScript?',
+    options: [
+      '<!-- Comentario -->',
+      '# Comentario',
+      '// Comentario',
+      '/* Comentario */'
+    ],
+    answer: '/* Comentario */'
+  },
+  {
+    question: '¿Cuál es la forma correcta de declarar un array en JavaScript?',
+    options: [
+      'var miArray = ()',
+      'var miArray = []',
+      'var miArray = {}',
+      'var miArray = <>'
+    ],
+    answer: 'var miArray = []'
+  },
+  {
+    question: '¿Cómo se accede al primer elemento de un array en JavaScript?',
+    options: [
+      'miArray[0]',
+      'miArray(0)',
+      'miArray{0}',
+      'miArray.0'
+    ],
+    answer: 'miArray[0]'
+  },
+  {
+    question: '¿Cómo se agrega un elemento al final de un array en JavaScript?',
+    options: [
+      'miArray.add("elemento")',
+      'miArray.push("elemento")',
+      'miArray.insert("elemento")',
+      'miArray.append("elemento")'
+    ],
+    answer: 'miArray.push("elemento")'
+  },
+  {
+    question: '¿Cómo se elimina el último elemento de un array en JavaScript?',
+    options: [
+      'miArray.remove()',
+      'miArray.delete()',
+      'miArray.pop()',
+      'miArray.shift()'
+    ],
+    answer: 'miArray.pop()'
+  },
+  {
+    question: '¿Cómo se escribe una estructura condicional en JavaScript?',
+    options: [
+      'if (condicion) {}',
+      'if condicion {}',
+      'if: (condicion) {}',
+      'if {condicion}'
+    ],
+    answer: 'if (condicion) {}'
+  },
+  {
+    question: '¿Cuál es la sintaxis correcta para un bucle "for" en JavaScript?',
+    options: [
+      'for i=0; i < 5; i++ {}',
+      'for (i = 0; i < 5; i++) {}',
+      'for (i <= 5; i++) {}',
+      'for (i++; i < 5; i=0) {}'
+    ],
+    answer: 'for (i = 0; i < 5; i++) {}'
+  },
+  {
+    question: '¿Cómo se declara un objeto en JavaScript?',
+    options: [
+      'var objeto = {}',
+      'var objeto = []',
+      'var objeto = ()',
+      'var objeto = <>'
+    ],
+    answer: 'var objeto = {}'
+  },
+  {
+    question: '¿Cómo se accede a una propiedad de un objeto en JavaScript?',
+    options: [
+      'objeto["propiedad"]',
+      'objeto(propiedad)',
+      'objeto.propiedad',
+      'A y C son correctas'
+    ],
+    answer: 'A y C son correctas'
+  },
+  {
+    question: '¿Cómo se agregan propiedades a un objeto en JavaScript?',
+    options: [
+      'objeto.propiedad = "valor"',
+      'objeto["propiedad"] = "valor"',
+      'objeto.add("propiedad", "valor")',
+      'A y B son correctas'
+    ],
+    answer: 'A y B son correctas'
+  },
+  {
+    question: '¿Cuál es la forma correcta de comparar dos valores en JavaScript?',
+    options: [
+      '==',
+      '===',
+      'A y B son correctas',
+      'A y B son incorrectas'
+    ],
+    answer: 'A y B son correctas'
+  },
+  {
+    question: '¿Cuál es el valor de "null" en JavaScript?',
+    options: [
+      'Un objeto',
+      'Un número',
+      'Una cadena',
+      'Una ausencia de valor'
+    ],
+    answer: 'Una ausencia de valor'
+  },
+  {
+    question: '¿Cuál es el valor de "undefined" en JavaScript?',
+    options: [
+      'Una ausencia de valor',
+      'Una variable declarada pero no asignada',
+      'Una cadena vacía',
+      'Un número nulo'
+    ],
+    answer: 'Una variable declarada pero no asignada'
+  },
+  {
+    question: '¿Cómo se convierte una cadena en un número en JavaScript?',
+    options: [
+      'Number(cadena)',
+      'parseInt(cadena)',
+      'parseFloat(cadena)',
+      'Todas las anteriores'
+    ],
+    answer: 'Todas las anteriores'
+  },
+  {
+    question: '¿Qué operador se usa para verificar si dos valores son diferentes?',
+    options: [
+      '==',
+      '===',
+      '!=',
+      '!=='
+    ],
+    answer: '!='
+  },
+  {
+    question: '¿Cómo se define una función anónima en JavaScript?',
+    options: [
+      'function () {}',
+      '() => {}',
+      'A y B son correctas',
+      'A y B son incorrectas'
+    ],
+    answer: 'A y B son correctas'
+  }
+]} />

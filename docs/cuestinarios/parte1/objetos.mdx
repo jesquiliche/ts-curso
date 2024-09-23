@@ -1,0 +1,113 @@
+---
+sidebar_position: 5
+---
+import  Quiz  from '@site/src/components/Quiz';
+
+# Objetos y Arrays
+
+Aquí tienes un cuestionario sobre **objetos y arrays** de JavaScript. Responde las preguntas y verifica tus respuesta.
+
+
+
+<Quiz questions={[
+  {
+    question: '¿Cómo se define un objeto en JavaScript?',
+    options: ['[]', '{}', '()', '""'],
+    answer: '{}'
+  },
+  {
+    question: '¿Cómo accedes a la propiedad "nombre" de un objeto llamado "persona"?',
+    options: ['persona(nombre)', 'persona.nombre', 'persona["nombre"]', 'persona->nombre'],
+    answer: 'persona.nombre'
+  },
+  {
+    question: '¿Cómo se añade una nueva propiedad "pais" a un objeto "persona"?',
+    options: ['persona.pais = "España"', 'persona["pais"] = "España"', 'persona.add("pais", "España")', 'Ambas A y B'],
+    answer: 'Ambas A y B'
+  },
+  {
+    question: '¿Qué método se usa para añadir un elemento al final de un array?',
+    options: ['push', 'pop', 'unshift', 'shift'],
+    answer: 'push'
+  },
+  {
+    question: '¿Cómo se elimina el primer elemento de un array?',
+    options: ['pop', 'shift', 'unshift', 'slice'],
+    answer: 'shift'
+  },
+  {
+    question: '¿Qué devuelve el método "filter" de un array?',
+    options: ['Un valor booleano', 'Un nuevo array con los elementos que cumplen la condición', 'El primer elemento que cumple la condición', 'Nada'],
+    answer: 'Un nuevo array con los elementos que cumplen la condición'
+  },
+  {
+    question: '¿Qué método se usa para aplicar una función a cada elemento de un array y devolver un nuevo array?',
+    options: ['map', 'forEach', 'reduce', 'filter'],
+    answer: 'map'
+  },
+  {
+    question: '¿Cómo accedes al tercer elemento de un array llamado "numeros"?',
+    options: ['numeros[2]', 'numeros(3)', 'numeros[3]', 'numeros<3>'],
+    answer: 'numeros[2]'
+  },
+  {
+    question: '¿Qué método se usa para combinar todos los elementos de un array en un solo valor?',
+    options: ['reduce', 'map', 'filter', 'concat'],
+    answer: 'reduce'
+  },
+  {
+    question: '¿Qué operador se usa para crear una copia de un objeto en ES6?',
+    options: ['=', 'Object.assign()', '...', 'copy()'],
+    answer: '...'
+  },
+  {
+    question: '¿Qué método se usa para añadir un elemento al inicio de un array?',
+    options: ['unshift', 'shift', 'push', 'pop'],
+    answer: 'unshift'
+  },
+  {
+    question: '¿Cómo se elimina una propiedad "edad" de un objeto "persona"?',
+    options: ['delete persona.edad', 'remove persona.edad', 'persona.edad = undefined', 'persona.edad = null'],
+    answer: 'delete persona.edad'
+  },
+  {
+    question: '¿Cuál es la sintaxis correcta para crear un array?',
+    options: ['array = {}', 'array = []', 'array = ()', 'array = <>'],
+    answer: 'array = []'
+  },
+  {
+    question: '¿Qué método devuelve la longitud de un array?',
+    options: ['size', 'count', 'length', 'index'],
+    answer: 'length'
+  },
+  {
+    question: '¿Qué método se usa para unir todos los elementos de un array en una cadena?',
+    options: ['join', 'concat', 'push', 'pop'],
+    answer: 'join'
+  },
+  {
+    question: '¿Cómo se comprueba si una propiedad "nombre" existe en un objeto "persona"?',
+    options: ['"nombre" in persona', 'persona.has("nombre")', 'persona.exists("nombre")', 'persona.contains("nombre")'],
+    answer: '"nombre" in persona'
+  },
+  {
+    question: '¿Cómo se accede a la propiedad "nombre" de un objeto llamado "persona" usando la notación de corchetes?',
+    options: ['persona[nombre]', 'persona["nombre"]', 'persona.{nombre}', 'persona->nombre'],
+    answer: 'persona["nombre"]'
+  },
+  {
+    question: '¿Qué método se usa para iterar sobre los elementos de un array sin modificarlo?',
+    options: ['map', 'forEach', 'filter', 'reduce'],
+    answer: 'forEach'
+  },
+  {
+    question: '¿Qué método se usa para encontrar el primer elemento en un array que cumple con una condición?',
+    options: ['find', 'filter', 'map', 'reduce'],
+    answer: 'find'
+  },
+  {
+    question: '¿Cómo se puede combinar dos arrays en uno solo?',
+    options: ['concat', 'join', 'push', 'reduce'],
+    answer: 'concat'
+  }
+]} />

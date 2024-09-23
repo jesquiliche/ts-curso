@@ -1,0 +1,114 @@
+---
+sidebar_position: 4
+
+---
+import Quiz from '@site/src/components/Quiz';
+
+# Funciones
+
+Aquí tienes un cuestionario sobre **Funciones** de JavaScript. Responde las preguntas y verifica tus respuesta.
+
+
+
+<Quiz questions={[
+  {
+    question: '¿Cuál es la sintaxis correcta para declarar una función llamada "miFuncion" en JavaScript?',
+    options: [
+      'function miFuncion() {}',
+      'var miFuncion() {}',
+      'let miFuncion = function {}',
+      'miFuncion function() {}'
+    ],
+    answer: 'function miFuncion() {}'
+  },
+  {
+    question: '¿Cómo se define una función anónima?',
+    options: [
+      'function() {}',
+      'var anonima() {}',
+      'let anonima = function {}',
+      'function anonima() {}'
+    ],
+    answer: 'function() {}'
+  },
+  {
+    question: '¿Cuál es la sintaxis correcta para una función flecha que toma dos parámetros y devuelve su suma?',
+    options: [
+      '(a, b) => a + b',
+      'a, b => { return a + b; }',
+      '(a, b) -> a + b',
+      'function(a, b) => a + b'
+    ],
+    answer: '(a, b) => a + b'
+  },
+  {
+    question: '¿Qué es una función de orden superior?',
+    options: [
+      'Una función que se llama a sí misma',
+      'Una función que toma otra función como argumento o devuelve una función',
+      'Una función que tiene más de dos parámetros',
+      'Una función que solo se usa dentro de objetos'
+    ],
+    answer: 'Una función que toma otra función como argumento o devuelve una función'
+  },
+  {
+    question: '¿Qué palabra clave se usa para definir una función?',
+    options: [
+      'def',
+      'function',
+      'func',
+      'lambda'
+    ],
+    answer: 'function'
+  },
+  {
+    question: '¿Cuál es el valor de retorno de la función "function saludar(nombre) { return `Hola, ${nombre}!`; }" si se llama como "saludar(\'Juan\')"?',
+    options: [
+      'Hola, Juan!',
+      'Hola, nombre!',
+      'Hola, undefined!',
+      'Hola, Juan'
+    ],
+    answer: 'Hola, Juan!'
+  },
+  {
+    question: '¿Cómo se llama a una función almacenada en una variable "miFuncion"?',
+    options: [
+      'call miFuncion()',
+      'miFuncion()',
+      'execute miFuncion()',
+      'run miFuncion()'
+    ],
+    answer: 'miFuncion()'
+  },
+  {
+    question: '¿Qué operador se usa para definir una función flecha?',
+    options: [
+      '=>',
+      '->',
+      ':=',
+      '<='
+    ],
+    answer: '=>'
+  },
+  {
+    question: '¿Cuál es la sintaxis correcta para una función con un solo parámetro que devuelve el doble del parámetro?',
+    options: [
+      'param => param * 2',
+      '(param) => param * 2',
+      '(param) => { return param * 2; }',
+      'Todas las anteriores'
+    ],
+    answer: 'Todas las anteriores'
+  },
+  {
+    question: '¿Cuál es la salida de la siguiente función? function test() { return 5; } console.log(test());',
+    options: [
+      'undefined',
+      'null',
+      '5',
+      'test'
+    ],
+    answer: '5'
+  }
+]} />

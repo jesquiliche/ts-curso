@@ -1,0 +1,213 @@
+---
+sidebar_position: 3
+
+---
+import Quiz from '@site/src/components/Quiz';
+
+# Estructuras de Control
+
+Aquí tienes un cuestionario sobre **estructuras de control** de JavaScript. Responde las preguntas y verifica tus respuestas.
+
+
+<Quiz questions={[
+  {
+    question: '¿Cuál es la sintaxis correcta para una declaración "if" en JavaScript?',
+    options: [
+      'if (condicion) {}',
+      'if condicion {}',
+      'if: (condicion) {}',
+      'if {condicion}'
+    ],
+    answer: 'if (condicion) {}'
+  },
+  {
+    question: '¿Cómo se escribe una estructura "else if" en JavaScript?',
+    options: [
+      'else if (condicion) {}',
+      'elseif (condicion) {}',
+      'else (condicion) if {}',
+      'if else (condicion) {}'
+    ],
+    answer: 'else if (condicion) {}'
+  },
+  {
+    question: '¿Cuál es la sintaxis correcta para un bucle "for" en JavaScript?',
+    options: [
+      'for i=0; i < 5; i++ {}',
+      'for (i = 0; i < 5; i++) {}',
+      'for (i <= 5; i++) {}',
+      'for (i++; i < 5; i=0) {}'
+    ],
+    answer: 'for (i = 0; i < 5; i++) {}'
+  },
+  {
+    question: '¿Cómo se escribe un bucle "while" en JavaScript?',
+    options: [
+      'while (condicion) {}',
+      'while condicion {}',
+      'while: (condicion) {}',
+      'while {condicion}'
+    ],
+    answer: 'while (condicion) {}'
+  },
+  {
+    question: '¿Cómo se garantiza que un bloque de código se ejecuta al menos una vez en JavaScript?',
+    options: [
+      'Usando un bucle "while"',
+      'Usando una declaración "if"',
+      'Usando un bucle "for"',
+      'Usando un bucle "do...while"'
+    ],
+    answer: 'Usando un bucle "do...while"'
+  },
+  {
+    question: '¿Cuál es el propósito de la declaración "break" en un bucle o switch?',
+    options: [
+      'Para terminar el bucle o switch inmediatamente',
+      'Para saltar a la siguiente iteración del bucle',
+      'Para volver al inicio del bucle',
+      'Para pasar al siguiente caso en un switch'
+    ],
+    answer: 'Para terminar el bucle o switch inmediatamente'
+  },
+  {
+    question: '¿Cuál es la declaración que se usa para saltar a la siguiente iteración en un bucle?',
+    options: [
+      'break',
+      'continue',
+      'next',
+      'skip'
+    ],
+    answer: 'continue'
+  },
+  {
+    question: '¿Qué palabra clave se usa para ejecutar un bloque de código dependiendo de diferentes casos?',
+    options: [
+      'switch',
+      'if',
+      'else',
+      'for'
+    ],
+    answer: 'switch'
+  },
+  {
+    question: '¿Qué sucede si no se incluye una declaración "break" en un caso de switch?',
+    options: [
+      'El siguiente caso se ejecuta automáticamente',
+      'Se produce un error',
+      'El switch se detiene',
+      'El primer caso se vuelve a ejecutar'
+    ],
+    answer: 'El siguiente caso se ejecuta automáticamente'
+  },
+  {
+    question: '¿Cómo se define una condición que siempre es verdadera?',
+    options: [
+      'true',
+      'false',
+      'null',
+      'undefined'
+    ],
+    answer: 'true'
+  },
+  {
+    question: '¿Qué palabra clave se usa para definir una condición que siempre es falsa?',
+    options: [
+      'true',
+      'false',
+      'null',
+      'undefined'
+    ],
+    answer: 'false'
+  },
+  {
+    question: '¿Qué estructura se usa para manejar diferentes caminos de ejecución basados en una expresión?',
+    options: [
+      'switch',
+      'for',
+      'if',
+      'while'
+    ],
+    answer: 'switch'
+  },
+  {
+    question: '¿Cómo se detiene un bucle inmediatamente?',
+    options: [
+      'break',
+      'continue',
+      'return',
+      'exit'
+    ],
+    answer: 'break'
+  },
+  {
+    question: '¿Qué palabra clave se usa para saltar a la siguiente iteración de un bucle sin completar la actual?',
+    options: [
+      'break',
+      'continue',
+      'skip',
+      'next'
+    ],
+    answer: 'continue'
+  },
+  {
+    question: '¿Qué estructura se usa para ejecutar un bloque de código repetidamente mientras una condición sea verdadera?',
+    options: [
+      'if',
+      'switch',
+      'while',
+      'for'
+    ],
+    answer: 'while'
+  },
+  {
+    question: '¿Qué estructura se usa para ejecutar un bloque de código un número específico de veces?',
+    options: [
+      'for',
+      'while',
+      'if',
+      'switch'
+    ],
+    answer: 'for'
+  },
+  {
+    question: '¿Qué palabra clave se usa para evaluar una condición en una estructura switch?',
+    options: [
+      'case',
+      'default',
+      'else',
+      'if'
+    ],
+    answer: 'case'
+  },
+  {
+    question: '¿Qué palabra clave se usa para definir un bloque de código a ejecutar si ningún caso es verdadero en un switch?',
+    options: [
+      'case',
+      'default',
+      'else',
+      'if'
+    ],
+    answer: 'default'
+  },
+  {
+    question: '¿Qué estructura permite ejecutar diferentes bloques de código basado en varias condiciones?',
+    options: [
+      'if...else if...else',
+      'switch',
+      'while',
+      'for'
+    ],
+    answer: 'if...else if...else'
+  },
+  {
+    question: '¿Cómo se define una condición que siempre es falsa en JavaScript?',
+    options: [
+      'true',
+      'false',
+      'null',
+      'undefined'
+    ],
+    answer: 'false'
+  }
+]} />
